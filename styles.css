@@ -1,0 +1,67 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Press Start 2P", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body, button, div, span { /* Targets all text elements and more specifically */
+    font-family: 'Press Start 2P', cursive; /* Ensure the font family matches exactly */
+}
+
+#container {
+    text-align: center;
+    position: relative;  /* Ensures that the container can effectively center its contents */
+}
+
+.hidden {
+    display: none;
+}
+
+#yesResponse img {
+    width: 200px; /* Adjust based on your preference */
+}
+
+#buttons button {
+    margin: 10px;
+}
+
+#valentineQuestion {
+    font-size: 24px; /* Adjust size as necessary */
+    margin-bottom: 20px;
+}
+
+.heart {
+    position: fixed; /* Using fixed to keep the hearts positioned relative to the viewport */
+    color: pink; /* Set the color of your hearts */
+    font-size: 24px; /* Adjust size as necessary */
+    font-family: inherit;
+    opacity: 0; /* Start invisible for a smooth entry */
+    animation: fall infinite linear; /* Make the falling loop infinite */
+}
+
+@keyframes fall {
+    0% {
+        top: -5%; /* Start just above the screen */
+        opacity: 1; /* Fully visible once they start falling */
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        top: 105%; /* End just below the screen */
+        opacity: 0; /* Fade out before recycling */
+    }
+}
+
+.press-start-2p-regular {
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
